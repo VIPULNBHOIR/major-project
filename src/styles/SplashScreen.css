@@ -1,0 +1,22 @@
+.splash-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff; /* You can change the background color if needed */
+  }
+  
+  .logo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+  .tagline {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Adjust the color as needed */
+    text-align: center;
+  }
+  
