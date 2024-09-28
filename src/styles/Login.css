@@ -1,0 +1,124 @@
+/* Overall page layout */
+.login-page {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4f83cc 0%, #303f9f 100%);
+  }
+  
+  /* Container for the entire login page */
+  .login-container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    height: 80vh; /* Increased height */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    background-color: white;
+  }
+  
+  /* Left section with image */
+  .login-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+  }
+  
+  .login-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Right section with form */
+  .login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  /* Form styles */
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-form h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+ /* Centering the button horizontally without changing vertical position */
+.login-form button {
+    width: 330px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 auto; /* Centers the button horizontally */
+    display: block; /* Ensures it takes up only its own width */
+    margin-top: 200px;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .additional-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+  }
+  
+  .additional-options a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .additional-options a:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .login-left {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,154 @@
+/* components/forms/RegistrationPage.css */
+
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Page title */
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  /* Select User Type */
+  .select-user {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .select-user label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    margin-right: 10px;
+  }
+  
+  .select-user select {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Form styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    margin-top: 8px;
+  }
+  
+  .form-group input[type="file"] {
+    padding: 3px;
+  }
+  
+  /* Form heading */
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-weight: 700;
+  }
+  
+  /* Button styling */
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Profile photo input */
+  .profile-photo {
+    margin-top: 15px;
+  }
+  
+  .profile-photo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  .profile-photo input[type="file"] {
+    border: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  /* components/forms/RegistrationPage.css */
+
+/* Add this CSS rule for the form container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* This ensures there's space between form fields */
+  }
+  
+  /* Adjust the button's margin to ensure it's placed correctly */
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add space above the button */
+    align-self: center; /* Ensure it stays centered */
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  

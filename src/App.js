@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SplashScreen from './screens/SplashScreen';
 import LandingPage from './screens/LandingPage';
+import Login from './screens/Login';
+import RegistrationPage from './screens/RegistrationPage';
+import Dashboard from './screens/Dashboard';
+import ForgotPassword from './screens/ForgotPassword';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -23,6 +27,10 @@ function App() {
         ) : (
           <Routes>
             <Route path="/" element={<LandingPage />} /> {/* Show landing page after splash screen */}
+            <Route path="/login" element={<Login />} /> {/* Corrected: Use <Route> instead of <Router> */}
+            <Route path="/register" element={<RegistrationPage />} /> {/* Corrected: Use <Route> instead of <Router> */}
+            <Route path ="/dashboard" element={<Dashboard/>} />
+            <Route path = "/forgot-password" element={<ForgotPassword/>} />
           </Routes>
         )}
       </div>

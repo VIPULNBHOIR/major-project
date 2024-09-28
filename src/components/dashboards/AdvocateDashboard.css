@@ -1,0 +1,34 @@
+/* components/dashboards/AdvocateDashboard.css */
+.advocate-dashboard .stats-cards {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .advocate-dashboard .card {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .advocate-dashboard .recent-requests-table,
+  .advocate-dashboard .my-cases-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .advocate-dashboard .recent-requests-table th,
+  .advocate-dashboard .recent-requests-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .advocate-dashboard .hearing-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
